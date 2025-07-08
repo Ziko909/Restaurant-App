@@ -1,0 +1,57 @@
+'use client';
+import { useState } from 'react';
+import { X } from 'lucide-react';
+
+const Menubar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className='lg:hidden'>
+      {/* 🍔 Burger button */}
+      <button
+        onClick={() => setIsOpen(true)}
+        aria-label="Open menu"
+        className="flex flex-col justify-center items-center w-8 h-8 space-y-1.5 transition-transform hover:scale-110"
+      >
+        <span className="block h-[2px] w-6 bg-black rounded transition-all duration-300" />
+        <span className="block h-[2px] w-6 bg-black rounded transition-all duration-300" />
+        <span className="block h-[2px] w-6 bg-black rounded transition-all duration-300" />
+      </button>
+
+      {/* 🔥 Animated dropdown */}
+      <div
+        className={`fixed inset-0 bg-[#FCE4D6] z-50 transition-transform duration-500 ease-in-out ${
+          isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'
+        }`}
+      >
+        {/* ❌ Close button row */}
+        <div className="flex justify-end items-center min-h-12 bg-[#FCE4D6]">
+          <button
+            onClick={() => setIsOpen(false)}
+            aria-label="Close menu"
+            className="transition-transform duration-150 hover:rotate-90 text-black text-xl mr-4 "
+          >
+            <X height={27} width={27} />
+          </button>
+        </div>
+
+        {/* Top background stripe */}
+        <div className="w-full bg-[#FBD1B8] h-10" />
+
+        {/* 📋 Menu list */}
+        <ul className="mt-6 space-y-6 text-center font-semibold">
+          {['Home', 'About', 'Food Menu', 'Book table'].map((item) => (
+            <li
+              key={item}
+              className="shadow-md py-2 border-y border-[#f2c4a4] hover:bg-[#faf2ed] transition-all duration-200 hover:scale-[1.01]"
+            >
+              <a href={`/${item.match("Home") ? "" : item.toLowerCase().replace(' ', '-')}`}>{item}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Menubar;
