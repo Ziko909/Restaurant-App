@@ -10,13 +10,13 @@ const LovedFoodsCards: React.FC<ItemCardProps> = (props) => {
             <Image
                 src={props.imageUrl}
                 alt={props.titleImage}
-                width={56}
-                height={56}
-                className="  flex mt-1 justify-center w-13 h-13 object-cover "
+                width={260}
+                height={260}
+                className=" md:w-26 md:h-26 flex mt-1 justify-center w-13 h-13 object-cover "
             />
-            <div className='  flex  flex-col  py-2 space-y-1 text-left'>
-                <h1 className="text-sm -mt-2 font-bold text-black">{props.title}</h1>
-                <p className=" text-[10px] text-black">{props.description}</p>
+            <div className='  mt-2 flex  flex-col  py-2 space-y-1 text-left'>
+                <h1 className="text-sm -mt-2 font-bold text-black md:text-xl">{props.title}</h1>
+                <p className=" md:text-sm text-[10px] text-black">{props.description}</p>
             </div>
         </div>
     );

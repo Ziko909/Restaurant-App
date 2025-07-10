@@ -10,15 +10,15 @@ export const renderStars = (rate: number) => {
     const stars = [];
 
     for (let i = 0; i < fullStars; i++) {
-        stars.push(<Star key={`full-${i}`} size={14} className="text-yellow-400 fill-yellow-400" />);
+        stars.push(<Star key={`full-${i}`} size={14} className="text-yellow-400 fill-yellow-400 md:w-4 md:h-4" />);
     }
 
     if (hasHalfStar) {
-        stars.push(<StarHalf key="half" size={14} className="text-yellow-400 fill-yellow-400" />);
+        stars.push(<StarHalf key="half" size={14} className="text-yellow-400 fill-yellow-400 d:w-4 md:h-4" />);
     }
 
     for (let i = 0; i < emptyStars; i++) {
-        stars.push(<StarOff key={`empty-${i}`} size={14} className="text-yellow-400" />);
+        stars.push(<StarOff key={`empty-${i}`} size={14} className="text-yellow-400 d:w-4 md:h-4" />);
     }
 
     return <div className="flex gap-x-1">{stars}</div>;

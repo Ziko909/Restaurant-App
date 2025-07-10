@@ -24,19 +24,31 @@ const HomeItems: React.FC = () => {
     ];
 
     return (
-        <div className='mt-16 w-[90%] bg-[#FFFFFD] rounded-3xl flex flex-col p-6 mx-auto space-y-3 mb-6'>
-            {dummyFoods.map((food: any) => (
-            <ItemCard 
-            key={food.id} 
-            imageUrl={food.imagePath} 
-            titleImage={food.title} 
-            width={320} 
-            height={320}
-            title={food.title} 
-            description={food.description} 
-            buttonTitle="Order Now" 
-            />
-            ))}
+        <div className='mt-16 w-[90%] bg-[#FFFFFD] rounded-3xl flex flex-col items-center p-6 mx-auto space-y-3 mb-6 md:grid md:grid-cols-2 md:gap-y-3'>
+            {dummyFoods.map((food: any, index: number) => {
+            const isLast = index === dummyFoods.length - 1;
+            const isOdd = dummyFoods.length % 2 !== 0;
+            const shouldCenter = isOdd && isLast;
+
+            return (
+                <div
+                key={food.id}
+                className={shouldCenter ? 'md:col-span-2 md:justify-self-center' : ''}
+                >
+                <ItemCard
+                    imageUrl={food.imagePath}
+                    titleImage={food.title}
+                    width={320}
+                    height={320}
+                    title={food.title}
+                    description={food.description}
+                    buttonTitle="Order Now"
+                    containerStyles='max-w-[370px] '
+                />
+    </div>
+  );
+})}
+
         </div>
     );
 };

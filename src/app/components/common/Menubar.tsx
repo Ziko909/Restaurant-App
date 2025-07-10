@@ -13,9 +13,9 @@ const Menubar: React.FC = () => {
         aria-label="Open menu"
         className="flex flex-col justify-center items-center w-8 h-8 space-y-1.5 transition-transform hover:scale-110"
       >
-        <span className="block h-[2px] w-6 bg-black rounded transition-all duration-300" />
-        <span className="block h-[2px] w-6 bg-black rounded transition-all duration-300" />
-        <span className="block h-[2px] w-6 bg-black rounded transition-all duration-300" />
+        <span className="block md:h-[3px] md:w-8 h-[2px] w-6 bg-black rounded transition-all duration-300" />
+        <span className="block md:h-[3px] md:w-8 h-[2px] w-6 bg-black rounded transition-all duration-300" />
+        <span className="block md:h-[3px] md:w-8 h-[2px] w-6 bg-black rounded transition-all duration-300" />
       </button>
 
       {/* 🔥 Animated dropdown */}
@@ -31,7 +31,7 @@ const Menubar: React.FC = () => {
             aria-label="Close menu"
             className="transition-transform duration-150 hover:rotate-90 text-black text-xl mr-4 "
           >
-            <X height={27} width={27} />
+            <X height={27} width={27} className='md:w-[32px] md:h-[32px]' />
           </button>
         </div>
 
@@ -43,7 +43,7 @@ const Menubar: React.FC = () => {
           {['Home', 'About', 'Food Menu', 'Book table'].map((item) => (
             <li
               key={item}
-              className="shadow-md py-2 border-y border-[#f2c4a4] hover:bg-[#faf2ed] transition-all duration-200 hover:scale-[1.01]"
+              className="shadow-md py-2 border-y md:text-lg  md:py-3 border-[#f2c4a4] hover:bg-[#faf2ed] transition-all duration-200 hover:scale-[1.01]"
             >
               <a href={`/${item.match("Home") ? "" : item.toLowerCase().replace(' ', '-')}`}>{item}</a>
             </li>
