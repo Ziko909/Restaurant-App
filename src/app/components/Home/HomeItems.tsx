@@ -20,11 +20,18 @@ const HomeItems: React.FC = () => {
             imagePath: "/images/checkin.png",
             title: 'Grilled Chicken Salad',
             description: 'A refreshing grilled chicken salad made with mixed greens, cherry tomatoes, cucumbers, and a light lemon vinaigrette.'
+        },        {
+            id: 4,
+            imagePath: "/images/checkin.png",
+            title: 'Grilled Chicken Salad',
+            description: 'A refreshing grilled chicken salad made with mixed greens, cherry tomatoes, cucumbers, and a light lemon vinaigrette.'
         }
     ];
 
     return (
-        <div className='mt-16 w-[90%] bg-[#FFFFFD] rounded-3xl flex flex-col items-center p-6 mx-auto space-y-3 mb-6 md:grid md:grid-cols-2 md:gap-y-3'>
+        <div className='mt-16 w-[90%] bg-[#FFFFFD] rounded-3xl flex flex-col items-center p-6 mx-auto
+        mb-6 md:flex-row md:flex-wrap md:gap-x-2 md:justify-center lg:items-stretch gap-y-3 lg:mt-8'>
+      
             {dummyFoods.map((food: any, index: number) => {
             const isLast = index === dummyFoods.length - 1;
             const isOdd = dummyFoods.length % 2 !== 0;
@@ -33,7 +40,7 @@ const HomeItems: React.FC = () => {
             return (
                 <div
                 key={food.id}
-                className={shouldCenter ? 'md:col-span-2 md:justify-self-center' : ''}
+                className={shouldCenter ? 'col-span-1 md:col-span-2 md:justify-self-center' : ''}
                 >
                 <ItemCard
                     imageUrl={food.imagePath}
@@ -43,7 +50,7 @@ const HomeItems: React.FC = () => {
                     title={food.title}
                     description={food.description}
                     buttonTitle="Order Now"
-                    containerStyles='max-w-[370px] '
+                    containerStyles=' md:max-w-[300px] max-w-[370px]  lg:h-[100%]  lg:justify-between'
                 />
     </div>
   );

@@ -24,7 +24,7 @@ const feedbacks: {
         imageSrc: 'https://randomuser.me/api/portraits/men/2.jpg',
         imageAlt: 'Bob Smith',
         name: 'Bob Smith',
-        description: 'A wonderful dining experience. Will come again!',
+        description: 'A wonderful dining experience. Will come again! The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner Will come again! The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner Will come again! The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner Will come again! The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner Will come again! The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner Will come again! The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner Will come again! The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner Will come again! The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner Will come again! The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner Will come again! The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner. The ambiance was perfect for our family dinner.',
         date: '2024-06-10T13:55:00Z',
         rate: 4,
     },
@@ -39,19 +39,20 @@ const feedbacks: {
 ];
 const CustomerFeedbackCards: React.FC = () => {
     return (
-        <div className="flex flex-col gap-y-4 mb-7">
-            {feedbacks.map((feedback, idx) => (
-                <FeedbackCard
-                    key={idx}
-                    imageSrc={feedback.imageSrc}
-                    imageAlt={feedback.imageAlt}
-                    name={feedback.name}
-                    description={feedback.description}
-                    date={feedback.date}
-                    rate={feedback.rate}
-                />
-            ))}
-        </div>
+<div className="flex flex-col gap-y-4 mb-7 lg:items-center lg:gap-x-8l">
+    {feedbacks.map((feedback, idx) => (
+        <FeedbackCard
+            key={idx}
+            imageSrc={feedback.imageSrc}
+            imageAlt={feedback.imageAlt}
+            name={feedback.name}
+            description={feedback.description}
+            date={feedback.date}
+            rate={feedback.rate}
+        />
+    ))}
+</div>
+
     );
 };
 

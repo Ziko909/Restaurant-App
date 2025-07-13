@@ -23,13 +23,44 @@ const PopularFoods: React.FC = () => {
             title: 'Grilled Chicken Salad',
             description: 'A refreshing grilled chicken salad made with mixed greens, cherry tomatoes, cucumbers, and a light lemon vinaigrette.',
             price: 10.99
+        },
+        {
+            id: 3,
+            imagePath: "/images/checkin.png",
+            title: 'Grilled Chicken Salad',
+            description: 'A refreshing grilled chicken salad made with mixed greens, cherry tomatoes, cucumbers, and a light lemon vinaigrette.',
+            price: 10.99
+        },        {
+            id: 3,
+            imagePath: "/images/checkin.png",
+            title: 'Grilled Chicken Salad',
+            description: 'A refreshing grilled chicken salad made with mixed greens, cherry tomatoes, cucumbers, and a light lemon vinaigrette.',
+            price: 10.99
+        },        {
+            id: 3,
+            imagePath: "/images/checkin.png",
+            title: 'Grilled Chicken Salad',
+            description: 'A refreshing grilled chicken salad made with mixed greens, cherry tomatoes, cucumbers, and a light lemon vinaigrette.',
+            price: 10.99
+        },         {
+            id: 3,
+            imagePath: "/images/checkin.png",
+            title: 'Grilled Chicken Salad',
+            description: 'A refreshing grilled chicken salad made with mixed greens, cherry tomatoes, cucumbers, and a light lemon vinaigrette.',
+            price: 10.99
+        },         {
+            id: 3,
+            imagePath: "/images/checkin.png",
+            title: 'Grilled Chicken Salad',
+            description: 'A refreshing grilled chicken salad made with mixed greens, cherry tomatoes, cucumbers, and a light lemon vinaigrette.',
+            price: 10.99
         }
     ];
     return (
         <div className='w-[70%]  md:w-[90%]  mx-auto mb-10 relative'>
             <div className="w-full p-4  
                 flex flex-col items-center gap-y-6 mb-10
-                md:flex-row md:flex-wrap md:justify-center md:gap-8
+                md:flex-row md:flex-wrap md:justify-center md:gap-8 lg:gap-x-16 md:items-stretch
                ">
 
                         {dummyFoods.map((food: any) => (

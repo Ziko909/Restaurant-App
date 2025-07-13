@@ -1,0 +1,26 @@
+import React from 'react';
+import Link from 'next/link';
+
+const navItems = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Food Menu', href: '/menu' },
+    { name: 'Book table', href: '/book-table' },
+];
+
+const NavBar: React.FC = () => (
+    <nav className='hidden lg:block lg:mx-auto'>
+        <ul className='lg:flex gap-x-8'>
+            {navItems.map(item => (
+            <li
+            key={item.name}
+            className="py-2  md:text-lg md:py-3  transition-all duration-200 hover:scale-[1.01] lg:text-2xl"
+          >
+            <Link className='' href={item.href}>{item.name}</Link>
+          </li>
+            ))}
+        </ul>
+    </nav>
+);
+
+export default NavBar;

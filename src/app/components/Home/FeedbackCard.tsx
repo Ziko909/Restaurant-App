@@ -23,7 +23,7 @@ const FeedbackCard: React.FC<FeedbackCardProps> = ({
     rate,
 }) => {
     return (
-        <div className='bg-white rounded-xl p-3 flex gap-x-4 items-start  hover:shadow-lg hover:border-1 hover:border-blue-200 '>
+        <div className='bg-white rounded-xl p-3 flex gap-x-4 items-start  hover:shadow-lg hover:border-1 hover:border-blue-200 lg:w-[80%]  '>
             <Image src={imageSrc} alt={imageAlt} width={55} height={55} className="rounded-full shadow-lg md:w-14 nd:h-14"
             />
             <div className=' flex flex-col  gap-y-2 justify-between flex-1'>
