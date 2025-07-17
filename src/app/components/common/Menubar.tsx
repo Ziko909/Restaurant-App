@@ -2,8 +2,17 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
 
-const Menubar: React.FC = () => {
+interface MenubarProps {
+  setShowBookTable: (show: boolean) => void;
+}
+
+const Menubar = ({ setShowBookTable }: MenubarProps) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleBookTableClick = () => {
+    setShowBookTable(true);
+    setIsOpen(false);
+  };
 
   return (
     <div className='lg:hidden'>
@@ -45,7 +54,11 @@ const Menubar: React.FC = () => {
               key={item}
               className="shadow-md py-2 border-y md:text-lg  md:py-3 border-[#f2c4a4] hover:bg-[#faf2ed] transition-all duration-200 hover:scale-[1.01]"
             >
-              <a href={`/${item.match("Home") ? "" : item.toLowerCase().replace(' ', '-')}`}>{item}</a>
+              {item === 'Book table' ? (
+          <button onClick={handleBookTableClick}>{item}</button>
+              ) : (
+          <a href={`/${item.match("Home") ? "" : item === 'Food Menu' ? 'food-menu' : item.toLowerCase().replace(' ', '-')}`}>{item}</a>
+              )}
             </li>
           ))}
         </ul>

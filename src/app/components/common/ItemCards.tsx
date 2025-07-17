@@ -12,7 +12,7 @@ const ItemCard: React.FC<ItemCardProps> = (props) => {
     alt={props.titleImage}
     width={200}
     height={260}
-    className="mx-auto flex justify-center w-35 h-35 lg:w-[180px] lg:h-[180px] object-cover rounded-full"
+    className="mx-auto flex justify-center w-35 h-35 lg:w-[180px] lg:h-[180px] object-cover bg-green-100"
   />
   <div>
     <h1 className={`text-xl lg:text-2xl -mt-2 mb-2 font-bold text-black ${props.headingStyles || ''}`}>
