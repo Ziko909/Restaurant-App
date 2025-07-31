@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍽️ Restaurant App
 
-## Getting Started
+A modern, mobile-first restaurant website built with **Next.js 14**, **Tailwind CSS**, and **React**. This application delivers a sleek, responsive experience with optimized images, interactive UI components, and semantic sections to showcase a restaurant’s brand, menu, and services.
 
-First, run the development server:
+---
+
+## 🚀 Getting Started
+
+### 📦 Installation
+
+```bash
+git clone https://github.com/Ziko909/Restaurant-App.git
+cd Restaurant-App
+npm install
+```
+
+### 🧪 Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔧 Tech Stack & Concepts
 
-## Learn More
+| Technology      | Description                                      |
+|------------------|--------------------------------------------------|
+| **Next.js 14**   | App Router, server components, routing, metadata |
+| **Tailwind CSS** | Utility-first CSS for responsive styling         |
+| **TypeScript**   | Type-safe development                            |
+| **React**        | Component-based UI rendering                     |
+| **Image Optimization** | Responsive, performant images via Next.js |
+| **Inter Font**   | Optimized Google Fonts with `next/font/google`  |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 🖼️ **Hero Section**: Eye-catching header with image, CTA, and intro text
+- 🍲 **About Section**: Brief overview of the restaurant's story
+- 📜 **Menu Showcase**: Categorized food items (starters, mains, desserts, drinks)
+- 👨‍🍳 **Chefs Section**: Display of chef team with images and names
+- 📅 **Reservation Form**: Custom UI for booking a table
+- 💬 **Feedback Section**: Testimonials and user reviews
+- 📱 **Fully Responsive**: Mobile-first layout with adaptive design
+- 🧭 **Navigation Bar & Footer**: Sticky top menu and footer with contact & links
+- 🖼️ **Optimized Assets**: Images and icons optimized for performance
+- 🔄 **Reusable Components**: Modular and clean component design
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👨‍💻 Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Zakaria Aabou**  
+Junior Fullstack Developer| DevOps 
+📫 [GitHub Profile](https://github.com/Ziko909)
