@@ -1,6 +1,6 @@
 # 🍽️ Restaurant App
 
-A modern, mobile-first restaurant website built with **Next.js 14**, **Tailwind CSS**, and **React**. This application delivers a sleek, responsive experience with optimized images, interactive UI components, and semantic sections to showcase a restaurant’s brand, menu, and services.
+A modern, mobile-first restaurant website built with **Next.js 15**, **Tailwind CSS**, and **React**. This application delivers a sleek, responsive experience with optimized images, interactive UI components, and semantic sections to showcase a restaurant’s brand, menu, and services.
 
 ---
 
@@ -28,7 +28,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the application in y
 
 | Technology      | Description                                      |
 |------------------|--------------------------------------------------|
-| **Next.js 14**   | App Router, server components, routing, metadata |
+| **Next.js 15**   | App Router, server components, routing, metadata |
 | **Tailwind CSS** | Utility-first CSS for responsive styling         |
 | **TypeScript**   | Type-safe development                            |
 | **React**        | Component-based UI rendering                     |
