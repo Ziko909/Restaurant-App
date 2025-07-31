@@ -28,7 +28,7 @@ const Main: React.FC = () => {
           </h1>
 
           <p className="text-base md:text-lg lg:text-xl text-black">
-            Savor every bite with our chef-curated menu, featuring wholesome ingredients and vibrant flavors. Whether you're craving a hearty breakfast, a light lunch, or a decadent dinner, our dishes are designed to nourish your body and delight your senses. Experience the perfect blend of taste and health in every meal.
+            Savor every bite with our chef-curated menu, featuring wholesome ingredients and vibrant flavors. Whether you&apos;re craving a hearty breakfast, a light lunch, or a decadent dinner, our dishes are designed to nourish your body and delight your senses. Experience the perfect blend of taste and health in every meal.
           </p>
 
           <button className="py-3 px-12 md:py-4 md:px-16 text-lg md:text-xl lg:text-2xl bg-[#FB4C0A] rounded-lg text-white font-bold shadow-[0_8px_12px_#FB4C0A] hover:scale-105 transition-transform">
