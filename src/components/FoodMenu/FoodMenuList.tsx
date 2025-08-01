@@ -111,7 +111,7 @@ const FoodMenuList: React.FC = () => {
                         price={food.price}
                         containerStyles="
                         shadow-lg rounded-3xl 
-                        w-[92%] h-[370px]               
+                        w-[260px] h-[370px]               
                         md:w-[260px] md:h-[410px]       
                         lg:w-[300px] lg:h-[440px]      
                         justify-start transition-transform hover:scale-105 overflow-hidden

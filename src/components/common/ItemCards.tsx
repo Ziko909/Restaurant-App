@@ -39,7 +39,7 @@ const ItemCard: React.FC<ItemCardProps> = (props) => {
             props.buttonStyles || ""
           }`}
         >
-          <span className="flex items-center justify-center animate-wiggle-2">
+          <span className="flex items-center justify-center">
             {props.buttonTitle}
           </span>
         </button>
