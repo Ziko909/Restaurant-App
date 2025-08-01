@@ -44,7 +44,7 @@ const ChefCardsList: React.FC = () => {
                         name={chef.name}
                         description={chef.description}
                         titleImage={'Chef'}
-                        containerStyles='bg-[#fcf8f5] shadow-lg rounded-xl transition-transform hover:scale-105 border-3 border-[#E5C7AF] w-[280px] h-[360px] md:w-[260px] md:h-[350px] lg:w-[280px] lg:h-[380px] flex flex-col justify-start'
+                        containerStyles='bg-[#fcf8f5] shadow-lg rounded-xl transition-transform hover:scale-105 border-3 border-[#E5C7AF] w-[260px] h-[330px] md:w-[260px] md:h-[350px] lg:w-[280px] lg:h-[380px] flex flex-col justify-start'
                     />
                 ))}
             </div>

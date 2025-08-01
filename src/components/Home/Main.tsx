@@ -27,13 +27,14 @@ const Main: React.FC = () => {
             Enjoy <span className="border-b-4 border-[#D0AC5F] text-[#E14526]">Delicious <br /> Food</span> in Your <br /> Healthy Life
           </h1>
 
-          <p className="text-base md:text-lg lg:text-xl text-black">
-            Savor every bite with our chef-curated menu, featuring wholesome ingredients and vibrant flavors. Whether you&apos;re craving a hearty breakfast, a light lunch, or a decadent dinner, our dishes are designed to nourish your body and delight your senses. Experience the perfect blend of taste and health in every meal.
-          </p>
-
-          <button className="py-3 px-12 md:py-4 md:px-16 text-lg md:text-xl lg:text-2xl bg-[#FB4C0A] rounded-lg text-white font-bold shadow-[0_8px_12px_#FB4C0A] hover:scale-105 transition-transform">
-            Book a Table
-          </button>
+            <p className="text-base md:text-lg lg:text-xl text-black">
+              Savor every bite with our chef-curated menu, featuring wholesome ingredients and vibrant flavors. Whether you&apos;re craving a hearty breakfast, a light lunch, or a decadent dinner, our dishes are designed to nourish your body and delight your senses. Experience the perfect blend of taste and health in every meal.
+            </p>
+            <button className="py-3 px-12 md:py-4 md:px-16 text-lg md:text-xl lg:text-2xl bg-[#FB4C0A] rounded-lg text-white font-bold shadow-[0_8px_12px_#FB4C0A] hover:scale-105 transition-transform">
+                <span className="flex items-center justify-center animate-wiggle-2">
+                Book a Table
+                </span>
+            </button>
         </div>
       </section>
 
@@ -43,11 +44,12 @@ const Main: React.FC = () => {
 
       <section className="mt-8 w-[90%] mx-auto flex flex-col justify-between items-start space-y-6 lg:flex-row-reverse lg:justify-end lg:items-center lg:mb-8 lg:mt-22">
         <Image
-          src="/images/slamon.png"
+          src="/images/home-item4.png"
           alt="Delicious plat"
-          width={720}
-          height={720}
-          className="mx-auto lg:mx-0 shadow-[0_4px_20px_rgba(0,0,0,0.3)] w-[70vw] h-[70vw] max-w-[280px] max-h-[280px] md:max-w-[340px] md:max-h-[340px] lg:w-[32vw] lg:h-[32vw] lg:max-w-[430px] rounded-full lg:max-h-[430px]"
+          width={2000}
+          height={2000}
+          className="mx-auto lg:mx-0 shadow-[0_4px_20px_rgba(0,0,0,0.3)] w-[70vw] h-[70vw] max-w-[280px] max-h-[280px] md:max-w-[340px] md:max-h-[340px] lg:w-[32vw] lg:h-[32vw] lg:max-w-[430px] rounded-full lg:max-h-[430px] animate-spin"
+          style={{ animationDuration: '12s' }}
         />
         <section>
           <h1 className="mb-3 text-center text-2xl md:text-4xl lg:text-5xl font-bold">

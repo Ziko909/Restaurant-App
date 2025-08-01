@@ -11,16 +11,18 @@ const AboutMain: React.FC = () => {
                 justify-between items-start gap-6
                 lg:flex-row-reverse lg:justify-between lg:items-center  mb-8 md:mb-10 lg:mb-13 lg:mt-16">
                 <div className="lg:w-[45%] flex justify-center self-center">
-                    <Image
-                        src="/images/logo.png"
-                        alt="Delicious plat"
-                        width={720}
-                        height={720}
-                        className="mx-auto rounded-full 
-                            w-[70vw] h-[70vw] max-w-[280px] max-h-[280px]
-                            md:max-w-[340px] md:max-h-[340px]
-                            lg:w-[32vw] lg:h-[32vw] lg:max-w-[520px] lg:max-h-[520px]"
-                    />
+                    <div className="animate-wiggle">
+                        <Image
+                            src="/images/logo.png"
+                            alt="Delicious plat"
+                            width={720}
+                            height={720}
+                            className="mx-auto rounded-full 
+                                w-[70vw] h-[70vw] max-w-[280px] max-h-[280px]
+                                md:max-w-[340px] md:max-h-[340px]
+                                lg:w-[32vw] lg:h-[32vw] lg:max-w-[520px] lg:max-h-[520px]"
+                        />
+                    </div>
                 </div>
                 <div className="lg:w-[50%] flex flex-col justify-between items-start gap-6 lg:-mt-12 ">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight  text-[#E14526]">

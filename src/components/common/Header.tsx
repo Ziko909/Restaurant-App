@@ -15,13 +15,15 @@ const Header = ({ showBookTable, setShowBookTable }: HeaderProps) => {
     <header>
       <div className="w-[90%] flex justify-between items-center mx-auto lg:justify-start py-2 md:py-4 lg:py-6">
         <div className="text-md text-[#070000] flex items-center">
-          <Image
-            className="w-10 h-10 md:w-16 md:h-16 lg:w-16 lg:h-16"
-            src="/images/logo.png"
-            alt="Restaurant Logo"
-            width={720}
-            height={720}
-          />
+          <div className="animate-wiggle">
+            <Image
+              className="w-10 h-10 md:w-16 md:h-16 lg:w-16 lg:h-16"
+              src="/images/logo.png"
+              alt="Restaurant Logo"
+              width={720}
+              height={720}
+            />
+          </div>
           <h1 className="ml-2 text-lg md:text-xl lg:text-2xl">Restaurant</h1>
         </div>
         <Menubar setShowBookTable={setShowBookTable} />

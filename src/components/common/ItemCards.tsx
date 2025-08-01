@@ -39,7 +39,9 @@ const ItemCard: React.FC<ItemCardProps> = (props) => {
             props.buttonStyles || ""
           }`}
         >
-          {props.buttonTitle}
+          <span className="flex items-center justify-center animate-wiggle-2">
+            {props.buttonTitle}
+          </span>
         </button>
       )}
       {props.showPrice && props.price && (

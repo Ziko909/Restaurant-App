@@ -87,7 +87,7 @@ const dummyFoods: Food[] = [
 
 
 
-// FoodMenuList component
+
 const FoodMenuList: React.FC = () => {
     return (
         <div className='w-[70%] md:w-[90%] mx-auto mb-10 rel</div>ative mt-6 lg:mt-12'>
@@ -111,9 +111,9 @@ const FoodMenuList: React.FC = () => {
                         price={food.price}
                         containerStyles="
                         shadow-lg rounded-3xl 
-                        w-[92%] h-[370px]                // Mobile (small screens)
-                        md:w-[260px] md:h-[410px]       // Tablet (medium)
-                        lg:w-[300px] lg:h-[440px]       // Desktop (large)
+                        w-[92%] h-[370px]               
+                        md:w-[260px] md:h-[410px]       
+                        lg:w-[300px] lg:h-[440px]      
                         justify-start transition-transform hover:scale-105 overflow-hidden
                       "
                       priceStyles="text-[#FE1B01]"
@@ -128,7 +128,3 @@ const FoodMenuList: React.FC = () => {
 export default FoodMenuList;
 
 
-
-// https://pixabay.com/photos/cuisine-espagnol-paella-1740965/
-/* https://pixabay.com/photos/kebab-food-turkish-cuisine-grill-2505236/ */
-/* https://pixabay.com/photos/dessert-menu-vegetables-meal-cafe-2508848/ */

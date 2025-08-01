@@ -7,7 +7,7 @@ import { Feedback } from '../../types/Feedback';
 
 const feedbacks: Feedback[] = [
     {
-        imageSrc: 'https://randomuser.me/api/portraits/men/1.jpg',
+        imageSrc: '/images/1.jpg',
         imageAlt: 'John Smith',
         name: 'John Smith',
         description: 'Outstanding cuisine with exceptional presentation. The flavors were perfectly balanced and the service was impeccable.',
@@ -15,7 +15,7 @@ const feedbacks: Feedback[] = [
         rate: 5,
     },
     {
-        imageSrc: 'https://randomuser.me/api/portraits/men/2.jpg',
+        imageSrc: '/images/2.jpg',
         imageAlt: 'Bob Smith',
         name: 'Bob Smith',
         description: 'Delightful atmosphere and delicious food. The staff was attentive and made our evening special. Definitely worth a visit!',
@@ -23,7 +23,7 @@ const feedbacks: Feedback[] = [
         rate: 4,
     },
     {
-        imageSrc: 'https://randomuser.me/api/portraits/men/3.jpg',
+        imageSrc: '/images/3.jpg',
         imageAlt: 'Michael Lee',
         name: 'Michael Lee',
         description: 'Perfect venue for our celebration. Great food quality and wonderful ambiance that made our family dinner memorable.',
@@ -31,7 +31,7 @@ const feedbacks: Feedback[] = [
         rate: 5,
     },
     {
-        imageSrc: 'https://randomuser.me/api/portraits/men/4.jpg',
+        imageSrc: '/images/4.jpg',
         imageAlt: 'David Wilson',
         name: 'David Wilson',
         description: 'Perfect venue for our celebration. Great food quality and wonderful ambiance that made our family dinner memorable.',

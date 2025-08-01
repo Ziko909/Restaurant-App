@@ -49,11 +49,13 @@ const Foodmenucards: React.FC<ItemCardProps> = (props) => {
         
         {props.showButton !== false && (
           <button
-            className={`bg-[#FB4C0A] mb-4 lg:mb-4 py-2 px-6 md:px-12 md:py-3 lg:py-3 lg:px-13 rounded-lg text-white font-bold shadow-[0_3px_15px_#FB4C0A] transition-transform hover:scale-110 self-center ${
+            className={`bg-[#FB4C0A] mb-4 lg:mb-4 py-2 px-6 md:px-12 md:py-3 lg:py-3 lg:px-13 rounded-lg text-white font-bold shadow-[0_8px_12px_#FB4C0A] transition-transform hover:scale-110 self-center ${
               props.buttonStyles || ""
             }`}
           >
-            {props.buttonTitle}
+            <span className="flex items-center justify-center animate-wiggle-2">
+              {props.buttonTitle}
+            </span>
           </button>
         )}
       </div>
