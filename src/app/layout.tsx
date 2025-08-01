@@ -13,6 +13,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Restaurant App",
   description: "Discover and order from your favorite restaurants",
+  icons: {
+    icon: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({
