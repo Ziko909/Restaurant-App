@@ -35,7 +35,7 @@ const ItemCard: React.FC<ItemCardProps> = (props) => {
       </div>
       {props.showButton !== false && (
         <button
-          className={`bg-[#FB4C0A] py-2 px-10 md:px-12 md:py-3 lg:py-3 lg:px-15 rounded-lg text-white font-bold shadow-[0_8px_12px_#FB4C0A] transition-transform hover:scale-110 ${
+          className={`bg-[#FB4C0A] py-2 px-10 md:px-12 md:py-3 lg:py-3 lg:px-15 rounded-lg text-white font-bold shadow-[0_8px_12px_#FB4C0A] transition-transform hover:scale-110  cursor-pointer ${
             props.buttonStyles || ""
           }`}
         >

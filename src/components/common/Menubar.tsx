@@ -19,7 +19,7 @@ const Menubar = ({ setShowBookTable }: MenubarProps) => {
       <button
         onClick={() => setIsOpen(true)}
         aria-label="Open menu"
-        className="flex flex-col justify-center items-center w-8 h-8 space-y-1.5 transition-transform hover:scale-110"
+        className="flex flex-col justify-center items-center w-8 h-8 space-y-1.5 transition-transform hover:scale-110 cursor-pointer"
       >
         <span className="block md:h-[3px] md:w-8 h-[2px] w-6 bg-black rounded transition-all duration-300" />
         <span className="block md:h-[3px] md:w-8 h-[2px] w-6 bg-black rounded transition-all duration-300" />
@@ -35,7 +35,7 @@ const Menubar = ({ setShowBookTable }: MenubarProps) => {
           <button
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
-            className="transition-transform duration-150 hover:rotate-90 text-black text-xl mr-4"
+            className="transition-transform duration-150 hover:rotate-90 text-black text-xl mr-4 cursor-pointer"
           >
             <X height={27} width={27} className="md:w-[32px] md:h-[32px]" />
           </button>
@@ -50,7 +50,7 @@ const Menubar = ({ setShowBookTable }: MenubarProps) => {
               className="shadow-md py-2 border-y md:text-lg md:py-3 border-[#f2c4a4] hover:bg-[#faf2ed] transition-all duration-200 hover:scale-[1.01]"
             >
               {item === 'Book table' ? (
-                <button onClick={handleBookTableClick}>{item}</button>
+                <button onClick={handleBookTableClick} className='cursor-pointer'>{item}</button>
               ) : (
                 <a href={`/${item.match("Home") ? "" : item === 'Food Menu' ? 'food-menu' : item.toLowerCase().replace(' ', '-')}`}>{item}</a>
               )}

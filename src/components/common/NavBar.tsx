@@ -26,7 +26,7 @@ const NavBar: React.FC<MenubarProps> = ({ setShowBookTable }) => (
           >
             {item.name === 'Book table' ? (
               <button 
-                className='' 
+                className='cursor-pointer' 
                 onClick={() => setShowBookTable(true)}
               >
                 {item.name}

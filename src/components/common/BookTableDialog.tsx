@@ -43,7 +43,7 @@ const BookTableDialog: React.FC<BookTableDialogProps> = ({ show, setShowBookTabl
                 <button
                     onClick={() => setShowBookTable(false)}
                     aria-label="Close menu"
-                    className="transition-all duration-200 hover:rotate-90 hover:bg-red-100 rounded-full p-2 text-gray-700 hover:text-red-600"
+                    className="transition-all duration-200 hover:rotate-90 hover:bg-red-100 rounded-full p-2 text-gray-700 hover:text-red-600 cursor-pointer"
                 >
                     <X height={28} width={28} className='md:w-[34px] md:h-[34px] lg:w-[38px] lg:h-[38px]' />
                 </button>
@@ -115,7 +115,7 @@ const BookTableDialog: React.FC<BookTableDialogProps> = ({ show, setShowBookTabl
                 </div>
                 <button
                     type='submit'
-                    className='mx-4 md:mx-8 lg:mx-0 mb-6 lg:mb-0 py-4 lg:py-5 px-16 lg:px-20 bg-amber-600 hover:bg-amber-700 text-white text-lg md:text-xl lg:text-2xl font-semibold rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98]'
+                    className='mx-4 md:mx-8 lg:mx-0 mb-6 lg:mb-0 py-4 lg:py-5 px-16 lg:px-20 bg-amber-600 hover:bg-amber-700 text-white text-lg md:text-xl lg:text-2xl font-semibold rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer'
                 >
                     Book Table
                 </button>
